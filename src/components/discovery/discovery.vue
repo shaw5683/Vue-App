@@ -10,10 +10,10 @@
       <div>
         <swiper height="140px" :show-dots="false" :auto="true" :loop="true">
           <swiper-item>
-            <div class="cover"></div>
+            <div class="cover" :style="{backgroundImage:'url('+ coverPic +')'}"></div>
           </swiper-item>
           <swiper-item>
-            <div class="cover1"></div>
+            <div class="cover1" :style="{backgroundImage:'url('+ cover1Pic +')'}"></div>
           </swiper-item>
         </swiper>
         <ul class="flex list">
@@ -55,7 +55,7 @@
           <div class="main">
             <scroller lockY :bounce="false">
               <div class="item-wrapper f0">
-                <div class="item inblk" v-for="n in 5" :key="n">
+                <div class="item inblk" v-for="n in 5" :key="n" :style="{backgroundImage:'url('+ boilingPic +')'}">
                   沸点：如果有一年的空闲时间你会去做...
                 </div>
                 <div class="see-all inblk">
@@ -92,6 +92,13 @@
   import articleLink1 from '../articleLink1/articleLink1.vue'
   import myTransition from '../myTransition/myTransition.vue'
   export default {
+    data () {
+      return {
+        coverPic: require('./cover.jpg'),
+        cover1Pic: require('./cover1.jpg'),
+        boilingPic: require('./boiling.jpg')
+      }
+    },
     components: { Search, Scroller, Group, Cell, articleLink1, Swiper, SwiperItem, myTransition }
   }
 </script>
@@ -103,13 +110,11 @@
     .cover{
       height:14rem;
       width:100%;
-      background: url('./cover.jpg');
       background-size:100% 100%;
     }
     .cover1{
       height:14rem;
       width:100%;
-      background: url('./cover1.jpg');
       background-size:100% 100%;
     }
     .search-wrapper{
@@ -165,7 +170,6 @@
           width:100rem;
         }
         .item{
-          background: url("./boiling.jpg");
           background-size:cover;
           width:17rem;
           height:8rem;

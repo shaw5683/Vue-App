@@ -4,7 +4,7 @@
   <scroller lockX scrollbarY height="-105px">
     <div>
       <div class="article-wrapper">
-        <div class="cover"></div>
+        <div class="cover" :style="{backgroundImage:'url('+ coverPic +')'}"></div>
         <div class="article">
           <div class="title-wrapper">
             <div class="title">史上最详细VUE2.0 全套 demo 讲解 基础4 (条件渲染)</div>
@@ -41,7 +41,8 @@
         likeNum: 188,
         isLiked: false,
         commentContent: '',
-        isTouched: false
+        isTouched: false,
+        coverPic: require('./cover.png')
       }
     },
     methods: {
@@ -73,7 +74,6 @@
       .cover{
         width: 100%;
         height: 16rem;
-        background:url("./cover.png");
         background-size:100% 100%;
       }
       .article{
