@@ -1,0 +1,75 @@
+html{
+  width:100%;
+  height:100%;
+  font-size:62.5%;
+}
+body{
+  background:#efefef;
+  width:100%;
+  height:100%;
+  font-size: 1.6rem;
+  font-family: 'Microsoft YaHei UI Light';
+}
+.clearfix{
+  clear:both;
+}
+.f0{
+  font-size: 0;
+}
+.head{
+  width: 100%;
+  opacity:0.9;
+  position:fixed;
+  z-index:666;
+  height:5rem;
+}
+.foot{
+  height:5.5rem;
+  width:100%;
+  position:fixed;
+  z-index:666;
+  bottom:0;
+  left:0;
+  opacity:0.9;
+  box-sizing:border-box;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.tColor{
+  color:#007fff;
+}
+.cColor{
+  color:#ccc;
+}
+.inblk{
+  display:inline-block;
+}
+.c66c300{
+  color:#66c300;
+}
+.flex{
+  display:flex;
+}
+a:visited{
+  color:inherit;
+}
+a:link{
+  color:inherit;
+}
+.picture{
+  text-align: center;
+  font-size:1rem;
+}
+li{
+  list-style:none;
+}
+.orangered{
+  color:orangered;
+}
+.c999{
+  color:#999;
+}
