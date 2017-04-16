@@ -96,7 +96,7 @@
         likeNum: 19,
         isComment: false,
         isTouched: false,
-        coverPic: require('cover.png')
+        coverPic: require('./cover.png')
       }
     },
     methods: {
