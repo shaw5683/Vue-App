@@ -96,7 +96,7 @@
         likeNum: 19,
         isComment: false,
         isTouched: false,
-        coverPic: require('./cover.png')
+        coverPic: require('cover.png')
       }
     },
     methods: {
@@ -154,7 +154,7 @@
       width:100%;
       height:18rem;
       background-size:cover;
-      background-image: url(./cover.png);
+      background-image: url('./cover.png');
     }
     .article-wrapper{
       padding:0 1.5rem;
