@@ -12,7 +12,7 @@
     </x-header>
     <scroller lockX scrollbarY height="-105px">
       <div @click="hideComment">
-        <div class="cover" :style="{backgroundImage:'url('+coverPic+')'}"></div>
+        <div class="cover"></div>
         <div class="article-wrapper">
           <div class="title">Angular 2 + 折腾记 : (7) 初步了解表单 : 模板驱动及数据驱动及脱坑要点</div>
           <div class="from">原文链接 <span class="source">xxx.com</span></div>
@@ -154,6 +154,7 @@
       width:100%;
       height:18rem;
       background-size:cover;
+      background-image: url(./cover.png);
     }
     .article-wrapper{
       padding:0 1.5rem;
